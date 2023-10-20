@@ -1,0 +1,277 @@
+body {
+    background-color: #F5F5DC;
+    overflow-x: hidden;
+    /* font-family: Arial, sans-serif; */
+  }
+
+  img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  @font-face {
+    font-family: 'RetroFont';
+    src: url('http://127.0.0.1:5000/font'); 
+    font-weight: normal;
+    font-style: normal; 
+  }
+
+
+  
+  #tamagotchi-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #display {
+    background-color: #FFFFFF;
+    padding: 20px;
+    /* border-radius: 10px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  #info {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+  }
+  #infos {
+    margin-bottom: 20px;
+  }
+  
+  .pixel-bar {
+    display: flex;
+    justify-content: left;
+
+    height: 35px;
+    width: 242px;
+    margin-bottom: 10px;
+    border: 4px solid #000;
+  }
+  
+  
+  .pixel {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border: 1px solid #888;
+    margin: auto 2px; /* Adjust the spacing between pixels */
+  }
+  
+  .text {
+    margin-right: 10px; /* Änderung hier: Abstand zwischen Text und Balken */
+  }
+  
+  .line-wrapper {
+    display: flex;
+    align-items: center; /* Änderung hier: Die Beschriftung wird neben dem Balken zentriert */
+    margin-bottom: 10px;
+  }
+  
+  #tamagotchi {
+    width: 200px;
+    height: 100%;
+    min-height: 240px;
+    /* background-color: #E0E0B8; */
+    margin: 10px;
+    /* border: 4px solid #000; */
+ }
+
+ #tamagotchi input[type="text"] {
+  font-family: "RetroFont", sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  text-align: center;  
+ }
+
+ #tamagotchi img {
+    width: 100%; 
+    height: auto;
+    border: 4px solid #000;
+    
+  }
+  
+
+  
+  @import url(https://fonts.googleapis.com/css?family=VT323);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'RetroFont', sans-serif ;
+  font-size: 30px;
+}
+
+
+
+.btn {
+	background: #7C7C7C;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	margin: 1rem;
+	min-width: 100px;
+	padding: .5rem;
+	text-transform: uppercase;
+	width: auto;
+  font-family: 'RetroFont', sans-serif ;
+  z-index: 1;
+
+
+	&:focus,
+	&:hover {
+		background: #BCBCBC;
+	}
+}
+
+.btn.primary {
+	background: #881400;
+	
+	&:focus,
+	&:hover {
+		background: #A81000;
+	}
+}
+
+.btn.secondary {
+	background: #005800;
+	
+	&:focus,
+	&:hover {
+		background: #006800;
+	}
+}
+
+.btn.tertiary {
+	background: #0000BC;
+	
+	&:focus,
+	&:hover {
+		background: #0000FC;
+	}
+}
+
+#placeholder {
+  height: 500px;
+}
+
+#ausbildungsstelle {
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#food-div {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* #gameModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+#game {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+} */
+
+#game-container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  border: 4px solid #000;
+  margin-top: 30px;
+}
+
+#character {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#apples {
+  width: 100%;
+  display: flex;
+}
+
+.apple {
+  position: absolute;
+}

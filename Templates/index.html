@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamagotchi</title>
+  <link rel="stylesheet" href="http://127.0.0.1:5000/style">
+</head>
+<body>
+  <div id="food-div">
+    <img src="http://127.0.0.1:5000/apple" alt="Apfel"> 
+    <p id="food-count">2</p>
+  </div>
+          <div id="tamagotchi-container">
+            <div id="display">
+              <img src="http://127.0.0.1:5000/info" alt="info" id="info" click>
+              <div id="infos">
+                <p class="text" id="status">Status: Neutral</p>
+
+                <div class="line-wraper">
+
+                    <p class="text">Hunger: </p>
+                    <div id="hunger-bar" class="pixel-bar">
+                      <div class="pixel"></div>
+                      <div class="pixel"></div>
+                      <div class="pixel"></div>
+                      <div class="pixel"></div>
+                      <div class="pixel"></div>
+                    </div>
+                </div>
+
+                <div class="line-wraper">
+                    <p class="text">Happiness: </p>
+                    <div id="happiness-bar" class="pixel-bar">
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                        <div class="pixel"></div>
+                    </div>
+                </div>
+              
+              <button class="btn primary" onclick="feed()">Feed</button>
+              <button class="btn secondary" onclick="play()">Play</button>
+              <button class="btn tertiary" onclick="clean()">Clean</button>
+            </div>
+            <div id="tamagotchi">
+              <input type="text" value="Dein Name!">
+                <img src="http://127.0.0.1:5000/normal" alt="Tamagotchi Image" id="tamagotchi-image">
+              </div>
+              
+            </div>
+          </div>
+          <div id="placeholder"></div>
+          <div id="ausbildungsstelle">
+            <button class="btn primary" onclick="openModal(':(')">Ausbildungsstelle nicht Bekommen</button>
+            <button class="btn secondary" onclick="ausbildungsstelleBekommen()">Ausbildungsstelle Bekommen</button>
+          </div>
+          <div id="ausbildungsstelle"></div>
+
+          <div id="gameModal" class="modal">
+            <div id="game" class="modal-content">
+              <span class="close" onclick="close_game_modal()">&times;</span>
+              <div id="game-container">
+                <div id="apples"></div>
+                <div id="character"></div>
+              </div>
+          </div>
+
+          </div>
+          <div id="myModal" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <p id="modal-text"></p>
+              </div>
+          </div>
+  <script src="http://127.0.0.1:5000/script"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script></body>
+</html>
