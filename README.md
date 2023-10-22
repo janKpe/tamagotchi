@@ -1,7 +1,7 @@
 # tamagotchi
 
 ### Installation
-1. Python und Pip 3 Instalieren
+1. Python und Pip 3 Installieren
 2. `pip install -r ./requirements.txt` ausführen
 4. `python ./app.py` ausführen
 
